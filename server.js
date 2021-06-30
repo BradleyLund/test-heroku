@@ -1,6 +1,6 @@
 // importing all the relevant modules for the server
 const express = require('express');
-//const helmet = require('helmet');
+const helmet = require('helmet');
 const path = require('path');
 require('isomorphic-fetch');
 
@@ -12,19 +12,19 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 //using helmet for some basic security
-//app.use(helmet());
+app.use(
+    helmet({
+        contentSecurityPolicy: {
+            directives: {
+                ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+                "script-src": ["'self'", "'unsafe-inline'", "https://istore-api-capstone.herokuapp.com/"],
+            },
+        },
+    })
+);
 
 // this allows express to serve up the resources 
-/*if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'frontend/build')));
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
-    });
-}*/
-
 app.use(express.static(path.join(__dirname, 'build')));
-
-
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
