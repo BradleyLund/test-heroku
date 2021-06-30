@@ -15,27 +15,12 @@ app.use(express.json());
 app.use(helmet());
 
 // this allows express to serve up the resources 
-/*if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, 'frontend/build')));
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
     });
-}*/
-
-// Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, '../frontend/build')));
-
-// Handle GET requests to / route
-app.get("/", (req, res) => {
-    res.json({
-        message: "Hello from server!"
-    });
-});
-
-// All other GET requests not handled before will return our React app
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
-});
+}
 
 // testing to check that the server is working
 app.get('/', (req, res) => {

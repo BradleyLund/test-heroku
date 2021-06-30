@@ -1,0 +1,145 @@
+/*some basic styles*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  height: 100%;
+  font-family: 'roboto';
+}
+
+.holder {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+/*using the Z-index so that the navbar is "infront" and acts as a sticky nav*/
+.navbar {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  size: 10px;
+  position: relative;
+  right: 480px;
+}
+
+.navbar-nav {
+  padding: 0.5rem;
+}
+
+.list-group {
+  position: relative;
+}
+
+.nav-item a {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #2c2c2c;
+  position: relative;
+  left: 430px;
+}
+
+.nav-item a:hover {
+  color: #075F38;
+}
+
+.one {
+  height: 100vh;
+  background: #F1E7BF;
+  color: #2c2c2c;
+}
+
+.two {
+  height: 100vh;
+  background: #075F38;
+  color: #F1E7BF;
+}
+
+.three {
+  height: 100vh;
+  background: #F1E7BF;
+  color: #075F38
+}
+
+.search-head {
+  padding-bottom: 20px;
+}
+
+.search-button {
+  color: #075F38;
+  border: none;
+  width: 200px;
+  height: 40px;
+}
+
+.results {
+  background: #075F38;
+  color: black;
+}
+
+.results-head {
+  color: #F1E7BF;
+}
+
+.card {
+  height: 450px;
+}
+
+.display-card-body {
+  width: 18rem;
+  display: inline-block;
+  margin: 1rem;
+  background-color: #f9f7f7;
+}
+
+.card-img {
+  width: 150px;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.card-type {
+  text-transform: capitalize;
+  font-size: small;
+  color: rgb(109, 109, 109);
+}
+
+.fav-head {
+  padding-bottom: 20px;
+  color: #2c2c2c;
+}
+
+.search-results {
+  background: #F1E7BF;
+  color: black;
+}
+
+.fav-items-div {
+  display: inline-block;
+  margin: 1rem;
+}
+
+input,
+select {
+  border: none;
+  border-radius: 5px;
+  background: #F1E7BF;
+  width: 200px;
+  height: 40px;
+}

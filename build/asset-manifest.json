@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/static/js/main.81e9b808.chunk.js",
+    "main.js.map": "/static/js/main.81e9b808.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.094d12d8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.094d12d8.js.map",
+    "static/js/2.0c658d3d.chunk.js": "/static/js/2.0c658d3d.chunk.js",
+    "static/js/2.0c658d3d.chunk.js.map": "/static/js/2.0c658d3d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.0c658d3d.chunk.js.LICENSE.txt": "/static/js/2.0c658d3d.chunk.js.LICENSE.txt",
+    "static/media/apple_logo.e288ea4c.png": "/static/media/apple_logo.e288ea4c.png",
+    "static/media/istore.bd16d5c4.png": "/static/media/istore.bd16d5c4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.094d12d8.js",
+    "static/js/2.0c658d3d.chunk.js",
+    "static/js/main.81e9b808.chunk.js"
+  ]
+}

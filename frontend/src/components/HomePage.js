@@ -11,7 +11,7 @@ function HomePage() {
                 <div className='logo'>
                     <img style={{ height: 30 }} src={logo} alt="logo" />
                 </div>
-                <ul class='navbar-nav list-group'>
+                <ul className='navbar-nav list-group'>
                     <li className='nav-item'><a href='#Home'>Home</a></li>
                     <li className='nav-item'><a href='#Search'>Search</a></li>
                     <li className='nav-item'><a href='#Favs'>Favourites</a></li>
