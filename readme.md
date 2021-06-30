@@ -18,13 +18,13 @@ This a full-stack web application that interfaces with the iTunes Search API: ht
 
 ## Site
 
-www.heroku.com
+https://istore-api-capstone.herokuapp.com/
 
 ## Usage
 
 If you are and end user and would like to use the site, simply follow this link:
 
-www.ererer.com
+https://istore-api-capstone.herokuapp.com/
 
 ## Installation
 To run this code:
