@@ -26,6 +26,8 @@ If you are and end user and would like to use the site, simply follow this link:
 
 https://istore-api-capstone.herokuapp.com/
 
+If you would like to view and play around with the source code please download the code from the link above and follow the instillation steps below:
+
 ## Installation
 To run this code:
 * Make sure you are in the iStore-Capstone directory
